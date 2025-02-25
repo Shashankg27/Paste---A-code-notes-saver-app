@@ -21,7 +21,7 @@ To set up the Paste app locally, follow these steps:
 2. **Navigate to the Project Directory**:
 
     ```bash
-    cd Paste---A-code-notes-saver-app
+    cd paste
 3. **Install Dependencies**:
 
     ```bash
@@ -30,6 +30,7 @@ To set up the Paste app locally, follow these steps:
 ## Usage
 
 To start the application, run:
+
     ```bash
     npm run start
 
