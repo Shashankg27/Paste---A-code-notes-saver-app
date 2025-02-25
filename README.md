@@ -27,8 +27,8 @@ To set up the Paste app locally, follow these steps:
 
 To start the application, run:
 
-```bash
-npm run start
+    ```bash
+    npm run start
 
 This will launch the app, and you can begin adding and managing your code snippets and notes.
 
