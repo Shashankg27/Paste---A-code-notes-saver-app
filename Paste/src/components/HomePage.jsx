@@ -48,7 +48,7 @@ const HomePage = () => {
     <div className='w-full flex flex-col gap-4 p-4 items-center'>
       <div className='flex gap-2 w-[80%]'>
         <input
-          className='w-[72%] p-0.5 pl-3 border border-black rounded-2xl'
+          className='w-[72%] p-0.5 pl-3 border rounded-2xl'
           type="text" 
           placeholder='Enter the title: ' 
           value={title}
@@ -56,7 +56,7 @@ const HomePage = () => {
         />
 
         <button
-          className='border border-black rounded-xl p-1'
+          className='cursor-pointer border border-black rounded-xl p-1.5 bg-indigo-600 text-white'
           onClick={createPaste}>
           {
             (pasteID ? "Update my paste" : "Create my paste")

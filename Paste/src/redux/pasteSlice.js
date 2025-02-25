@@ -15,15 +15,24 @@ export const pasteSlice = createSlice({
       const title = paste.title;
       const content = paste.content;
       const temp = state.pastes.filter((p) => p.title === title && p.content === content);
-      // console.log(temp.length);
-      if(temp.length > 0){
-        toast("Paste already exists!");
+
+      if(title === ''){
+        toast.error("Title cannot be empty!");
+      }
+      else if(content === ''){
+        toast.error("Content cannot be empty!");
       }
       else{
-        state.pastes.push(paste);
-        localStorage.setItem("pastes", JSON.stringify(state.pastes));
-        toast.success("Paste created successfully");
+        if(temp.length > 0){
+          toast("Paste already exists!");
+        }
+        else{
+          state.pastes.push(paste);
+          localStorage.setItem("pastes", JSON.stringify(state.pastes));
+          toast.success("Paste created successfully");
+        }
       }
+      // console.log(temp.length);
     },
     updateToPastes: (state, action) => {
       const paste = action.payload;
