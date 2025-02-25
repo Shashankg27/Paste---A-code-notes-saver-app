@@ -22,10 +22,6 @@ To set up the Paste app locally, follow these steps:
 
     ```bash
     cd paste
-3. **Install Dependencies**:
-
-    ```bash
-    npm install
 
 ## Usage
 
