@@ -26,7 +26,7 @@ const Paste = () => {
     toast.success("Copied to clipboard");
   }
   function handelShare(id){
-    navigator.clipboard.writeText(`https://paste-git-main-shashank-guptas-projects-ddd17858.vercel.app/pastes/${id}`);
+    navigator.clipboard.writeText(`https://paste-teal.vercel.app/pastes/${id}`);
     toast.success("Link copied to clipboard");
   }
 
