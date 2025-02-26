@@ -14,7 +14,7 @@ export const pasteSlice = createSlice({
 
       const title = paste.title;
       const content = paste.content;
-      const temp = state.pastes.filter((p) => p.title === title && p.content === content);
+      const temp = state.pastes.filter((p) => p.title === title);
 
       if(title === ''){
         toast.error("Title cannot be empty!");

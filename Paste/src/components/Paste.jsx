@@ -26,7 +26,7 @@ const Paste = () => {
     toast.success("Copied to clipboard");
   }
   function handelShare(id){
-    navigator.clipboard.writeText(`localhost:5173/?pasteid=${id}`);
+    navigator.clipboard.writeText(`https://paste-git-main-shashank-guptas-projects-ddd17858.vercel.app/pastes/${id}`);
   }
 
   return (
@@ -57,7 +57,7 @@ const Paste = () => {
                   </div>
                 </div>
                 <div className='flex flex-col items-end'>
-                  <div className='flex gap-1 place-content-evenly'>
+                  <div className='flex gap-1.5 place-content-evenly'>
                     <Link to={`/?pasteid=${paste?._id}`}>Edit</Link>
                     <Link to={`/pastes/${paste?._id}`}>View</Link>
                     <button onClick={() => handelDelete(paste?._id)}
