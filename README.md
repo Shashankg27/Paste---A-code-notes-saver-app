@@ -1,7 +1,7 @@
 # Paste - A Code/Notes Saver App
 
-Paste is a web application designed to help users save and manage code snippets and notes efficiently.  
-Built with React, it offers a user-friendly interface for organizing and accessing your code and notes seamlessly.
+Paste is a web application frontend designed to help users save and manage code snippets and notes efficiently.  
+Built with React and tailwindCSS, it offers a user-friendly interface for organizing and accessing your code and notes seamlessly.
 
 ## Features
 
